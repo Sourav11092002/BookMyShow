@@ -28,11 +28,11 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                 />
 
-                <Link onClick={() => setIsOpen(false)} to='/'>Home</Link>
-                <Link onClick={() => setIsOpen(false)} to='/movies'>Movies</Link>
-                <Link onClick={() => setIsOpen(false)} to='/theaters'>Theaters</Link>
-                <Link onClick={() => setIsOpen(false)} to='/releases'>Releases</Link>
-                <Link onClick={() => setIsOpen(false)} to='/favorites'>Favorites</Link>
+                <Link onClick={() => { scrollTo(0, 0); setIsOpen(false) }} to='/'>Home</Link>
+                <Link onClick={() => { scrollTo(0, 0); setIsOpen(false) }} to='/movies'>Movies</Link>
+                <Link onClick={() => { scrollTo(0, 0); setIsOpen(false) }} to='/theaters'>Theaters</Link>
+                <Link onClick={() => { scrollTo(0, 0); setIsOpen(false) }} to='/releases'>Releases</Link>
+                <Link onClick={() => { scrollTo(0, 0); setIsOpen(false) }} to='/favorites'>Favorites</Link>
             </div>
 
             {/* Right Side Icons */}
